@@ -132,7 +132,7 @@ console.log("numeri ordinati", primo, secondo, terzo) // che casino
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n = 17
+let n = 18
 
 if (typeof n === "number") {
   console.log("Il valore è un numero")
@@ -144,21 +144,32 @@ if (typeof n === "number") {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+if (n % 2 === 0) {
+  console.log("il numero è pari")
+} else {
+  console.log("il numero è dispari")
+}
 
-/* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+/* Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza. */
+/* let val = 7
+if (val < 10) {
+  console.log("Meno di 10")
+} else if (val < 5) {
+  console.log("Meno di 5")
+} else {
+  console.log("Uguale a 10 o maggiore")
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let val = 11
+if (val < 10 && val >= 5) {
+  console.log("Meno di 10")
+} else if (val < 5) {
+  console.log("Meno di 5")
+} else {
+  val >= 10
+  console.log("Uguale a 10 o maggiore")
+}
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -168,29 +179,52 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 }
+console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto"
+
+console.log(me)
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName
+console.log(me)
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills[2]
+console.log(me)
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const numeri = []
+console.log("numeri", numeri)
+numeri.push(1)
+numeri.push(2)
+numeri.push(3)
+numeri.push(4)
+numeri.push(5)
+numeri.push(6)
+numeri.push(7)
+numeri.push(8)
+numeri.push(9)
+numeri.push(10)
 
+console.log(numeri)
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+numeri.pop(9)
+numeri.push(100)
+console.log(numeri)
