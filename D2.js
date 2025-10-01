@@ -82,7 +82,7 @@ if (salePrice > 50) {
 } else {
   checkoutWithDiscount = salePrice + shippingCost
 }
-console.log("Costo totale", checkoutWithDiscount)
+console.log("Costo totale", checkoutWithDiscount.toFixed(2))
 //come arrotondo a due decimali?
 
 /* ESERCIZIO 7
